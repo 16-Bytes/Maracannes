@@ -7,7 +7,7 @@
 /* Estilos gerais */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: white;
     color: #333;
     overflow-x: hidden;
     /* Para evitar barras de rolagem horizontais inesperadas */
@@ -181,16 +181,17 @@ nav.main-menu li.active > a,
     color: black;
 }
 .gradient {
-    /* Primeiro passo: definir um degradê como fundo */
+    /*definindo um degradê*/
     background-image: linear-gradient(to bottom, #f60003, #eb015a, #df01ac);
-    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    
+    /*apagando do fundo tudo que não estiver atrás do texto */
     background-clip: text;
+    
     -webkit-background-clip: text;
-    /* Alguns navegadores precisam do prefixo */
-    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    
+    /*apagar o texto, deixando apenas o fundo atrás dele */
     -webkit-text-fill-color: transparent;
-    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
-    color: black;
+    
 }
 .local {
     width: 80%;
@@ -208,6 +209,7 @@ aside {
     padding: 30px;
     float: left;
 }
+
 img {
     border-radius: 100px;
     width: 100px;
@@ -215,7 +217,7 @@ img {
 }
 
 .main-menu p {
-    padding-top: 590px;
+    padding-top: 800px;
     padding-left: 10px;
 }
 iframe {
@@ -223,4 +225,11 @@ iframe {
     margin: 0 auto;
     display: block;
     border: none;
+}
+.footer.de.cima{
+    top: 0;
+    bottom: auto;
+    text-align: center;
+    position: fixed;
+    z-index: 999; 
 }

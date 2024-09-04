@@ -1,4 +1,5 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +7,7 @@
 }
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: white;
     color: #333;
     overflow-x: hidden;
 }
@@ -146,6 +147,7 @@ nav.main-menu li.active > a,
 
 .main-menu:hover ~ .container,
 .main-menu:hover ~ .interface,
+.main-menu:hover ~ .footer.footer.de.cima,
 .main-menu:hover ~ .footer {
     margin-left: 250px;
 }
@@ -186,11 +188,34 @@ nav.main-menu li.active > a,
     color: #f3ab0e;
 }
 .main-menu p {
-    padding-top: 590px;
+    padding-top: 800px;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 section a {
     text-decoration: none; /* retira o sublinhado do link */
     color: #212121;
+}
+.footer.de.cima{
+    top: 0;
+    bottom: auto;
+    text-align: center;
+    position: fixed;
+    z-index: 999; 
+}
+
+.link:hover {
+
+    background-image: linear-gradient(to bottom, #ffa800 , #ffc400, #ffa800  );
+    
+    background-clip: text;
+    
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+
+}
+.sim{
+    font-family: sans-serif,'crossorigin';
 }
