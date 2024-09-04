@@ -1,0 +1,196 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    overflow-x: hidden;
+}
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.nav {
+    position: relative;
+    display: table-cell;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.main-menu:hover,
+nav.main-menu.expanded {
+    width: 250px;
+    overflow: visible;
+}
+.main-menu {
+    background: #212121;
+    border-right: 1px solid #e5e5e5;
+    position: fixed; /* Mudar de absolute para fixed */
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 61px;
+    overflow: hidden;
+    -webkit-transition: width 0.05s linear;
+    transition: width 0.05s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    z-index: 1000;
+}
+
+.main-menu > ul {
+    margin: 7px 0;
+}
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+.main-menu li > a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #999;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 195px;
+}
+.main-menu > ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+}
+.no-touch .scrollable.hover:hover {
+    overflow-y: auto;
+    overflow: visible;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+nav ul,
+nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li:hover > a,
+nav.main-menu li.active > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+    color: #fff;
+    background-color: #000;
+}
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+.interface {
+    z-index: 1000;
+    background-color: #fff;
+    margin-left: 61px; /* Ajuste inicial para corresponder à largura do menu */
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+}
+
+.main-menu:hover ~ .container,
+.main-menu:hover ~ .interface,
+.main-menu:hover ~ .footer {
+    margin-left: 250px;
+}
+.botao {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.botao a {
+    display: inline-block;
+    background-color: #f1d45e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+}
+.botao a:hover {
+    background-color: #b8860b;
+}
+.footer {
+    background-color: #f1d45e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: calc(100%); /* Subtraia a largura do menu de navegação */
+    z-index: 999; /* Para garantir que o footer fique acima de outros elementos */
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer a:hover {
+    color: #f3ab0e;
+}
+.main-menu p {
+    padding-top: 590px;
+    padding-left: 10px;
+}
+
+section a {
+    text-decoration: none; /* retira o sublinhado do link */
+    color: #212121;
+}
